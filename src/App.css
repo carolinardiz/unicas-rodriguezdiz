@@ -34,8 +34,8 @@ body {
   justify-content: space-between;}
   
 .logo{
- width: 15vw;
- height: 20vh;
+ width: 10vw;
+ height: 15vh;
  margin: 2vw;
  margin-left:10vw;
 }
@@ -52,6 +52,7 @@ ul{
   display:flex;
   justify-content: space-between;
   margin:3vw;
+  width: 50vw;
 
 }
 
@@ -65,9 +66,11 @@ ul{
   justify-content: center;
   margin: 1vw;
   font-size: medium;
-  background-color: #f1e9d6;
   width: 25%;
   padding: 12px;
+  border: solid;
+  border-width: thin;
+  border-color:lightseagreen;
   
 }
 
