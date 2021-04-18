@@ -34,9 +34,17 @@ body {
   justify-content: space-between;}
   
 .logo{
- size: 5vw;
- height: 15vh;
+ width: 15vw;
+ height: 20vh;
  margin: 2vw;
+ margin-left:10vw;
+}
+
+@media (max-width: 400px){
+  .logo{
+    margin-right: 1vw;
+    margin-left: 0;
+  }
 }
 
 ul{
@@ -47,14 +55,30 @@ ul{
 
 }
 
+@media (max-width: 400px) {
+  ul{
+    margin: 0;
+  }}
+
 .link{
   display: flex;
+  justify-content: center;
   margin: 1vw;
-  font-size: large;
+  font-size: medium;
   background-color: #f1e9d6;
   width: 25%;
   padding: 12px;
   
+}
+
+
+@media (max-width: 400px){
+  .link{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: small;
+margin: 0;}
 }
 
 .link:hover{
@@ -62,11 +86,26 @@ ul{
 }
 
 a{
+  display: flex;
+  justify-content: center;
   color: black;
   text-decoration: none;
   font-weight: 200;
   width: 5vw;
 }
+
+ @media (max-width: 400px) {
+   a {  
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: xx-small;
+margin: 0;
+padding: 1vw;}
+   }
+ 
+  
+
 
 .App-link {
   color: #61dafb;
