@@ -1,5 +1,6 @@
 import './App.css';
 import logo from './logo.png';
+import cart from "./cart.png"
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
 
             <li className="link">
               <a href=""> Contacto</a>
+            </li>
+            <li>
+              <a>
+                <img src={cart} className="cart" />
+              </a>
             </li>
 
           </ul>
