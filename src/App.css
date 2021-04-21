@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.bigtext{
-    color:black
+.bigtext {
+  color: black;
 }
 
-
+p {
+  color: red;
+}
 
 .App {
   text-align: center;
@@ -27,90 +28,94 @@ body {
 }
 
 .topbar {
-  background-color: #f8f4e3;
+  background-color: #f6f8ea;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  height: 30vh;}
-  
-.logo{
- max-width:200px;
- max-height: 200px;
- width: auto;
- height: auto;
- margin: 2vw;
- margin-left:10vw;
+  height: 20vh;
 }
 
-@media (max-width: 400px){
-  .logo{
+nav {
+  width: 100vw;
+}
+
+.logo {
+  max-width: 180px;
+  max-height: 180px;
+  width: auto;
+  height: auto;
+  margin-left: 10vw;
+  margin-right: 2vw;
+}
+
+@media (max-width: 400px) {
+  .logo {
     margin-right: 1vw;
     margin-left: 0;
   }
 }
 
-ul{
+ul {
   list-style: none;
-  display:flex;
+  display: flex;
   justify-content: space-around;
-  width: 50vw;
-
+  width: 60vw;
+  margin-right: 0;
 }
 
 @media (max-width: 400px) {
-  ul{
+  ul {
     margin: 0;
-  }}
+  }
+}
 
-.link{
+.link {
   display: flex;
   justify-content: center;
   margin: 1vw;
-  font-size: x-large;
-  width: 25%;
+  font-size: large;
+  width: 10%;
+  height: 10%;
   padding: 12px;
   border: solid;
   border-width: thin;
-  border-color:lightseagreen;
-  
+  border-color: lightseagreen;
 }
 
-
-@media (max-width: 400px){
-  .link{
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: small;
-margin: 0;}
+@media (max-width: 400px) {
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    margin: 0;
+  }
 }
 
-.link:hover{
+.link:hover {
   background-color: white;
 }
 
-a{
+a {
   display: flex;
   justify-content: center;
-  color: black;
+  color: lightseagreen;
   text-decoration: none;
   font-weight: 200;
   width: 5vw;
 }
 
- @media (max-width: 400px) {
-   a {  
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: xx-small;
-margin: 0;
-padding: 1vw;}
-   }
- 
-  
-
+@media (max-width: 400px) {
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-small;
+    margin: 0;
+    padding: 1vw;
+  }
+}
 
 .App-link {
   color: #61dafb;
@@ -125,10 +130,8 @@ padding: 1vw;}
   }
 }
 
-.cart{
-    width: 100;
-    height: 100px;
-    margin-left: 10vw;
-    
-
+.cart {
+  width: 100;
+  height: 100px;
+  margin-left: 10vw;
 }
