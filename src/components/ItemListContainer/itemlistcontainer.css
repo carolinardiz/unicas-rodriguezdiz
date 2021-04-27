@@ -1,9 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
-
 .greetings {
   color: green;
   font-size: xx-large;
-  background-color: ivory;
   display: flex;
   height: 40vh;
   margin: 0;

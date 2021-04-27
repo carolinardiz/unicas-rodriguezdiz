@@ -1,5 +1,10 @@
-import "../ItemListContainer/itemlistcontainer.css";
+import React from "react";
+import TitlebarGridList from "../TitlebarGridList/TitlebarGridList";
 
 export const ItemListContainer = (props) => {
-  return <p class="greetings">{props.greeting}</p>;
+  return (
+    <div>
+      <TitlebarGridList products={props.products} />
+    </div>
+  );
 };

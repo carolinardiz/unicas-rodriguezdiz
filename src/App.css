@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .bigtext {
@@ -73,21 +73,15 @@ ul {
 .link {
   display: flex;
   justify-content: center;
-  margin: 1vw;
-  font-size: large;
-  width: 10%;
+  align-self: center;
   height: 10%;
-  padding: 12px;
-  border: solid;
-  border-width: thin;
-  border-color: lightseagreen;
 }
 
 @media (max-width: 400px) {
   .link {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     font-size: small;
     margin: 0;
   }
