@@ -1,5 +1,4 @@
-import cart from "../../cart.png"
-
+import cart from "../cart.png";
 
 export const Cart = (props) => {
   return (

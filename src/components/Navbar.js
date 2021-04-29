@@ -1,6 +1,6 @@
-import logo from "../../logo.png";
-import "../../App.css";
-import { Cart } from "../navbar/CartWidget";
+import logo from "../logo.png";
+import "../App.css";
+import { Cart } from "./CartWidget";
 import Button from "@material-ui/core/Button";
 
 export const Navbar = (props) => {
@@ -27,9 +27,9 @@ export const Navbar = (props) => {
 };
 
 const listItems = function (titulos) {
-  return titulos.map(function (titulo) {
+  return titulos.map(function (titulo, i) {
     return (
-      <li className="link">
+      <li className="link" key={i}>
         <Button variant="contained" color="primary">
           {" "}
           {titulo.label}

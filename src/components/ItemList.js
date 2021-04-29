@@ -2,9 +2,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import ListSubheader from "@material-ui/core/ListSubheader";
-import { ProductTile } from "../ProductTile";
+import { Item } from "./Item";
 
-export default function TitlebarGridList(props) {
+export default function ItemList(props) {
   const classes = useStyles();
 
   return (
@@ -15,8 +15,8 @@ export default function TitlebarGridList(props) {
             Compra Nuestros Productos
           </ListSubheader>
         </GridListTile>
-        {props.products.map((tile) => (
-          <ProductTile tile={tile} key={tile.img} className={classes.item} />
+        {props.products.map((tile, i) => (
+          <Item tile={tile} key={i} className={classes.item} />
         ))}
       </GridList>
     </div>
@@ -32,11 +32,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   gridList: {
-    width: "100vw",
+    width: "80vw",
     height: "100vh",
   },
+
   item: {
-    width: "20vh",
-    height: "20vh",
+    width: "35vh",
+    height: "30vh",
   },
 }));

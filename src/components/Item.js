@@ -2,14 +2,13 @@ import { useState } from "react";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 import { ItemCount } from "./ItemCount";
-import { makeStyles } from "@material-ui/core/styles";
 
-export const ProductTile = ({ tile }) => {
+export const Item = ({ tile, className }) => {
   const [count, setCount] = useState(0);
   const [stock, setStock] = useState(10);
 
   return (
-    <GridListTile key={tile.img}>
+    <GridListTile key={tile.img} className={className}>
       <img src={tile.img} alt={tile.title} />
       <GridListTileBar
         title={tile.title}
