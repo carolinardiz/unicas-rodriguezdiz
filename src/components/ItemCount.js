@@ -13,7 +13,7 @@ export const ItemCount = ({ stock, initial, onAdd, onRemove }) => {
       >
         -
       </button>
-      <p>{initial}</p>
+      <p className={classes.counter}>{initial}</p>
       <button
         onClick={() => {
           if (stock === 0) return;
@@ -30,5 +30,10 @@ const useStyles = makeStyles((theme) => ({
   amountControlButton: {
     display: "flex",
     justifyContent: "center",
+  },
+
+  counter: {
+    color: "white",
+    fontSize: "large",
   },
 }));

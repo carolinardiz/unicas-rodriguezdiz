@@ -3,78 +3,54 @@ import { ItemListContainer } from "./components/ItemListContainer";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { useState } from "react";
 
+
 const mockProducts = [
   {
     img:
       "https://feelgoodfoodie.net/wp-content/uploads/2018/08/Quinoa-Burger-9.jpg",
-    title: "Hamburguesa de Quinoa",
+    title: "Hamburguesas de Quinoa",
     price: "$30",
   },
   {
     img:
-      "https://feelgoodfoodie.net/wp-content/uploads/2018/08/Quinoa-Burger-9.jpg",
-    title: "Hamburguesa de Mijo",
+      "https://www.veggieboogie.com/wp-content/uploads/2017/06/hamburguesas-mijo-lentejas-2.jpg",
+    title: "Hamburguesas de Mijo",
     price: "$35",
   },
   {
-    img:
-      "https://feelgoodfoodie.net/wp-content/uploads/2018/08/Quinoa-Burger-9.jpg",
-    title: "Hamburguesa de Lentejas",
+    img: "https://recetasveganas.pro/img/hamburguesa-de-lentejas-875.jpg",
+    title: "Hamburguessa de Lentejas",
     price: "$33",
   },
   {
     img:
-      "https://feelgoodfoodie.net/wp-content/uploads/2018/08/Quinoa-Burger-9.jpg",
-    title: "Hamburguesa de Quinoa",
+      "https://proveg.com/es/wp-content/uploads/sites/2/2020/02/buddha-bowl-1536x1024.jpg",
+    title: "Buddha Bowl",
     price: "$30",
   },
   {
     img:
-      "https://feelgoodfoodie.net/wp-content/uploads/2018/08/Quinoa-Burger-9.jpg",
-    title: "Hamburguesa de Mijo",
+      "https://www.shoothecook.es/wp-content/uploads/como-hacer-buddha-bowl-vegano.jpg",
+    title: "Green Salad",
     price: "$35",
   },
   {
     img:
-      "https://feelgoodfoodie.net/wp-content/uploads/2018/08/Quinoa-Burger-9.jpg",
-    title: "Hamburguesa de Lentejas",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAK_oaoocHoBNdCDLnZzvYtXNF78cRkGfhwQ&usqp=CAU",
+    title: "Funghi",
     price: "$33",
   },
   {
     img:
-      "https://feelgoodfoodie.net/wp-content/uploads/2018/08/Quinoa-Burger-9.jpg",
-    title: "Hamburguesa de Quinoa",
+      "https://www.seasonsandsuppers.ca/wp-content/uploads/2019/07/mango-salad-5.jpg",
+    title: "Tropical",
     price: "$30",
   },
   {
     img:
-      "https://feelgoodfoodie.net/wp-content/uploads/2018/08/Quinoa-Burger-9.jpg",
-    title: "Hamburguesa de Mijo",
+      "https://ifoodreal.com/wp-content/uploads/2019/04/FG-smoked-salmon.jpg",
+    title: "Fisher",
     price: "$35",
-  },
-  {
-    img:
-      "https://feelgoodfoodie.net/wp-content/uploads/2018/08/Quinoa-Burger-9.jpg",
-    title: "Hamburguesa de Lentejas",
-    price: "$33",
-  },
-  {
-    img:
-      "https://feelgoodfoodie.net/wp-content/uploads/2018/08/Quinoa-Burger-9.jpg",
-    title: "Hamburguesa de Lentejas",
-    price: "$33",
-  },
-  {
-    img:
-      "https://feelgoodfoodie.net/wp-content/uploads/2018/08/Quinoa-Burger-9.jpg",
-    title: "Hamburguesa de Lentejas",
-    price: "$33",
-  },
-  {
-    img:
-      "https://feelgoodfoodie.net/wp-content/uploads/2018/08/Quinoa-Burger-9.jpg",
-    title: "Hamburguesa de Lentejas",
-    price: "$33",
   },
 ];
 

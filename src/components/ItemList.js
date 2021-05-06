@@ -11,8 +11,8 @@ export default function ItemList(props) {
     <div className={classes.root}>
       <GridList cellHeight={180} className={classes.gridList}>
         <GridListTile key="Subheader" cols={2} style={{ height: "auto" }}>
-          <ListSubheader component="div">
-            Compra Nuestros Productos
+          <ListSubheader component="div" className={classes.subtitle}>
+            Feel Good
           </ListSubheader>
         </GridListTile>
         {props.products.map((tile, i) => (
@@ -38,6 +38,13 @@ const useStyles = makeStyles((theme) => ({
 
   item: {
     width: "35vh",
-    height: "30vh",
+    height: "35vh",
+    marginBottom: "2vw",
+  },
+
+  subtitle: {
+    fontSize: "xx-large",
+    color: "#52b788",
+    margin: "3vw",
   },
 }));
